@@ -1,3 +1,107 @@
 /* Custom CSS Settings
 -------------------------*/
 [[setting:customcss]]
+
+
+
+/* header */
+.header-logo img {
+    margin-top: 5px;
+}
+
+@media (max-width: 979px) {
+   #header .header-top {
+       padding: 0 10px;
+   }
+   #header .header-top .navbar .navbar-inner .usermenu {
+       float: right;
+   }
+   #header .header-top .navbar .navbar-inner .btn-navbar {
+       display: none;
+   }
+}
+
+/*login page */
+#page-login-index #page-header,
+#page-login-forgot_password #page-header {
+    display: none;
+}
+
+/* front page course list styling overriding */
+.pagelayout-frontpage {
+    background: #f6f8f8;
+}
+.pagelayout-frontpage #frontpage-course-list {
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    background: #f6f8f8;
+}
+
+.pagelayout-frontpage #frontpage-course-list h2 {
+    border: 0;
+    text-align: center;
+}
+
+.pagelayout-frontpage #frontpage-course-list .frontpage-course-list-all {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagelayout-frontpage #frontpage-course-list .coursebox {
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    margin: 1% 1%;
+    padding: 0;
+    background: #fff;
+}
+
+@media (max-width: 991px) {
+   .pagelayout-frontpage #frontpage-course-list .coursebox {
+        width: 100%;
+        margin: 10px 0;
+   }
+}
+
+@media (max-width: 599px) {
+   .pagelayout-frontpage #frontpage-course-list .coursebox .content .courseimage {
+       margin-left: 0;
+   }
+}
+
+.pagelayout-frontpage #frontpage-course-list .coursebox .content,
+.pagelayout-frontpage #frontpage-course-list .coursebox .info {
+    padding: 0 20px;
+}
+
+.pagelayout-frontpage #frontpage-course-list .coursebox .info {
+    position: absolute;
+    top: 20px;
+}
+.pagelayout-frontpage #frontpage-course-list .coursebox .content {
+    position: initial;
+    padding-top: 55px;
+}
+
+.pagelayout-frontpage #frontpage-course-list .coursebox .content,
+.pagelayout-frontpage #frontpage-course-list .coursebox .info {
+    padding-left: 120px;
+}
+
+.pagelayout-frontpage #frontpage-course-list .coursebox .content .summary {
+    padding: 0;
+}
+.pagelayout-frontpage #frontpage-course-list .coursebox .content .courseimage {
+    top: 50%;
+    margin-top: -50px;
+    left: 20px;
+}
+
+/* hiding extra icons */
+.pagelayout-frontpage #frontpage-course-list .coursebox .enrolmenticons,
+.pagelayout-frontpage #frontpage-course-list .coursebox .moreinfo {
+    display: none;
+}

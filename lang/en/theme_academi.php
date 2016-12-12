@@ -177,4 +177,5 @@ $string['toggleslideshowdesc'] = 'Choose if you wish to hide or show the slide s
 $string['twurl'] = 'Twitter';
 $string['twurl_default'] = 'https://twitter.com/yourtwittername';
 $string['twurldesc'] = 'The Twitter url of your organisation.';
+$string['loggedinnot'] = '';
 

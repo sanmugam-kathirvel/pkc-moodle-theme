@@ -10,6 +10,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID))); ?></a>
+          <a class="header-logo" href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo get_logo_url(); ?>" width="60" height="60" alt="Academi"></a>
             <?php if($CFG->branch > "27"): ?>
 										       <?php echo $OUTPUT->user_menu(); ?>
              <?php endif; ?>   
@@ -26,11 +27,11 @@
       </div>
     </div>
   </div>
-  <div class="header-main">
+  <?php /*<div class="header-main">
   	<div class="container-fluid">
     	<div class="row-fluid">
       	<div class="span5">
-        	<div class="logo"><a href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo get_logo_url(); ?>" width="251" height="37" alt="Academi"></a></div>
+        	<div class="logo"><a href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo get_logo_url(); ?>" width="60" height="60" alt="Academi"></a></div>
         </div>
       	<div class="span7">
         	<div class="infoarea">          	
@@ -40,6 +41,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> */ ?>
 </header>
 <!--E.O.Header-->
